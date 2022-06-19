@@ -1,16 +1,12 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import requests
+import bs4
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+url = "https://www.zoopla.co.uk/for-sale/details/59925805/?search_identifier=c49910f3f968999ca250e3b410e51602"
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+def test_scrape():
+    source = requests.get(url).text
+    return
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+test_scrape()
